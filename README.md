@@ -1,4 +1,4 @@
-# docker-hadoop-spark
+# docker-hadoop-hive-spark
 
 - Hadoop 2.7.7
 - Hive 2.3.1
