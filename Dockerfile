@@ -64,7 +64,7 @@ RUN apt-get update && apt-get install -y wget procps && \
 COPY hive/* $HIVE_HOME/conf/
 
 #MYSQLDB as Hive Metastore
-RUN apt-get -y install default-mysql-server
+RUN apt-get update && apt-get -y install default-mysql-server
 WORKDIR $HIVE_HOME/lib/
 RUN apt-get update && apt-get install -y wget && \
 wget https://repo1.maven.org/maven2/mysql/mysql-connector-java/8.0.13/mysql-connector-java-8.0.13.jar
